@@ -53,4 +53,7 @@ function generateAkanName(event){
 
     // Get Akan name
     const akanName = getAkanName(dayIndex, gender.value)
+
+    // Display Result
+    displayResult(dayIndex, akanName)
 }
