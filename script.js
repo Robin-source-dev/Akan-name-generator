@@ -29,3 +29,5 @@ const days = [
 ]
 
 //Form submission
+
+document.getElementById("AkanForm").addEventListener("submit",generateAkanName)
