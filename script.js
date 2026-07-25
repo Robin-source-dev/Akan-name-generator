@@ -57,3 +57,29 @@ function generateAkanName(event){
     // Display Result
     displayResult(dayIndex, akanName)
 }
+
+// Validate all user input
+
+function validateInput(day, month, year, gender){
+
+    if(isNaN(day) || day < 1 || day > 31){
+        alert("Please enter a valid day (1-31).")
+        return false
+    }
+    
+    if(isNaN(month) || month < 1 || month > 12){
+        alert("Please enter a valid month (1-12).")
+        return false
+    }
+
+    if(isNaN(year) || year < 1000){
+        alert("Please enter a valid year.")
+        return false
+    }
+
+    if(!gender){
+        alert("Please select your gender.")
+        return false
+    }
+    return true
+}
