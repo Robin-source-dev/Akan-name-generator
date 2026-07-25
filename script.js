@@ -43,4 +43,9 @@ function generateAkanName(event){
     const year = parseInt(document.getElementById("year").value)
 
     const gender = document.querySelector('input[name="gender"]:checked')
+
+    //validate input
+    if(!validateInput(day, month, year, gender)){
+        return
+    }
 }
