@@ -28,6 +28,19 @@ const days = [
     "Saturday"
 ]
 
-//Form submission
+// Form submission
 
 document.getElementById("AkanForm").addEventListener("submit",generateAkanName)
+
+// Main function
+
+function generateAkanName(event){
+
+    event.preventDefault()
+
+    const day = parseInt(document.getElementById("day").value)
+    const month = parseInt(document.getElementById("month").value)
+    const year = parseInt(document.getElementById("year").value)
+
+    const gender = document.querySelector('input[name="gender"]:checked')
+}
