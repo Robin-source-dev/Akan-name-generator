@@ -50,4 +50,7 @@ function generateAkanName(event){
     }
     // Calculate weekday
     const dayIndex = calculateDay(day, month, year)
+
+    // Get Akan name
+    const akanName = getAkanName(dayIndex, gender.value)
 }
