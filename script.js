@@ -66,7 +66,7 @@ function validateInput(day, month, year, gender){
         alert("Please enter a valid day (1-31).")
         return false
     }
-    
+
     if(isNaN(month) || month < 1 || month > 12){
         alert("Please enter a valid month (1-12).")
         return false
@@ -82,4 +82,12 @@ function validateInput(day, month, year, gender){
         return false
     }
     return true
+}
+
+// Calculate day of week using formula
+
+function calculateDay(day, month, year){
+    let MM = month
+    let YY = year % 100
+    let CC = Math.floor(year / 100)
 }
