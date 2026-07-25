@@ -44,8 +44,10 @@ function generateAkanName(event){
 
     const gender = document.querySelector('input[name="gender"]:checked')
 
-    //validate input
+    // validate input
     if(!validateInput(day, month, year, gender)){
         return
     }
+    // Calculate weekday
+    const dayIndex = calculateDay(day, month, year)
 }
