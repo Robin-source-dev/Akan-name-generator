@@ -30,7 +30,7 @@ const days = [
 
 // Form submission
 
-document.getElementById("AkanForm").addEventListener("submit",generateAkanName)
+document.getElementById("akanForm").addEventListener("submit",generateAkanName)
 
 // Main function
 
@@ -144,6 +144,8 @@ convert to:
 
 */
 
+// Convert result of formula into the correct day of the week 
+
 const map = [6,0,1,2,3,4,5]
 
 return map[value]
@@ -153,10 +155,10 @@ return map[value]
 
 function getAkanName(dayIndex, gender){
     if(gender === "male"){
-        return maleNames(dayIndex)
+        return maleNames[dayIndex]
     }
     else{
-        return femaleNames(dayIndex)
+        return femaleNames[dayIndex]
     }
 }
 
