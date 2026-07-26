@@ -122,4 +122,41 @@ function calculateDay(day, month, year){
     ) %7
 )
 value = ((value % 7) + 7) %7
+
+/*
+Formula returns
+0 = Saturday
+1 = Sunday
+2 = Monday
+3 = Tuesday
+4 = Wednesday
+5 = Thursday
+6 = Friday
+
+convert to:
+0 = Sunday
+1 = Monday
+2 = Tuesday
+3 = Wednesday
+4 = Thursday
+5 = Friday
+6 = Saturday
+
+*/
+
+const map = [6,0,1,2,3,4,5]
+
+return map[value]
 }
+
+//Get Akan name
+
+function getAkanName(dayIndex, gender){
+    if(gender === "male"){
+        return maleNames(dayIndex)
+    }
+    else{
+        return femaleNames(dayIndex)
+    }
+}
+
