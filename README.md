@@ -89,13 +89,6 @@ If any input is invalid, an appropriate error message is displayed.
 
 ---
 
-## Live Demo
-
-GitHub Pages:
-
-**https://robin-source-dev.github.io/akan-name-generator/**
----
-
 ## Future Improvements
 
 * Add leap year validation.
