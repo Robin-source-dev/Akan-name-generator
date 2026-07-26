@@ -90,4 +90,36 @@ function calculateDay(day, month, year){
     let MM = month
     let YY = year % 100
     let CC = Math.floor(year / 100)
+
+    // January and February Adjustment
+
+    if(MM === 1){
+        MM = 13
+        YY--
+
+        if(YY < 0){
+            YY = 99
+            CC--
+        }
+    }
+    if(MM === 2){
+        MM = 14
+        YY--
+
+        if(YY < 0){
+            YY = 99
+            CC--
+        }
+    }
+
+    let value = Math.floor((
+        (CC / 4)
+        -(2 * CC)
+        -1
+        +((5 * YY) / 4)
+        +((26 * (MM + 1 )) / 10)
+        + day
+    ) %7
+)
+value = ((value % 7) + 7) %7
 }
