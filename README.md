@@ -13,6 +13,14 @@ The Akan Name Generator is a simple web application that calculates the day of t
 Akan names originate from the Akan people of Ghana, where children are traditionally named according to the day of the week on which they were born. This application allows users to enter their birth date and gender, then generates the appropriate Akan name.
 
 ---
+## Behavior-Driven Development (BDD)
+Behavior ; Input ; Expected Output
+User enters a valid birth date and selects Male	Day: 15, Month: 8, Year: 2004, Displays the day of the week and the corresponding male Akan name
+User enters a valid birth date and selects Female Day: 22, Month: 11, Year: 1999, Displays the day of the week and the corresponding female Akan name
+User enters an invalid day; Day: 35	; Displays an alert requesting a valid day
+User enters an invalid month; Month: 15; Displays an alert requesting a valid month
+User leaves the gender unselected; No gender selected; Displays an alert requesting the user to select a gender
+User submits valid information; Valid date and gender; Calculates and displays the correct Akan name
 
 ## Features
 
@@ -98,6 +106,13 @@ If any input is invalid, an appropriate error message is displayed.
 * Display additional information about Akan naming traditions.
 
 ---
+## Contact Information
+
+Author: Robin Mwenda
+
+GitHub: https://github.com/Robin-source-dev
+
+Email: Robbinmwenda2@gmail.com
 
 ## License
 
