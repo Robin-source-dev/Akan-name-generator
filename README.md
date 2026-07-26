@@ -108,7 +108,7 @@ If any input is invalid, an appropriate error message is displayed.
 ---
 ## Contact Information
 
-Author: Robin Mwenda
+Author: Robin Mwenda Gikunda
 
 GitHub: https://github.com/Robin-source-dev
 
