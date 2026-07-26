@@ -160,3 +160,12 @@ function getAkanName(dayIndex, gender){
     }
 }
 
+// Display output
+
+function displayResult(dayIndex, akanName){
+    document.getElementById("result").innerHTML = `
+    <h2>Your Result<h2>
+    <p>You were born on <strong>${days[dayIndex]}</strong>.</p>
+    <p>Your Akan name is <strong>${akanName}</strong>.</p>`
+
+}
