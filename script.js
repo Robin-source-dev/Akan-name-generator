@@ -38,10 +38,12 @@ function generateAkanName(event){
 
     event.preventDefault()
 
+    // reading user input
     const day = parseInt(document.getElementById("day").value)
     const month = parseInt(document.getElementById("month").value)
     const year = parseInt(document.getElementById("year").value)
 
+    // Selecting gender
     const gender = document.querySelector('input[name="gender"]:checked')
 
     // validate input
@@ -147,7 +149,7 @@ convert to:
 // Convert result of formula into the correct day of the week 
 
 const map = [6,0,1,2,3,4,5]
-
+// returns corrected weekday index
 return map[value]
 }
 
